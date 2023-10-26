@@ -1,0 +1,46 @@
+<!--create a basic HTML home page with JS, CSS and images-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Home Page</title>
+    <!-- add style to page-->
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+    </style>
+
+    <!--add js to page-->
+    <script>
+        alert("Hello! I am Pet Home Page!!");
+    </script>
+</head>
+<body>
+    <!--change the content of the page to pet clinic-->
+    <h1>Pet Clinic</h1>
+    <!--create a navigaiton button to access all pages-->
+    <button onclick="window.location.href='PetHome.html'">Home</button>
+    <button onclick="window.location.href='PetDetails.html'">Pet Details</button>
+    <!--add paragraph to page-->
+    <p>Visit our pet clinic for all your pet needs.</p>
+    <!--add image to page-->
+    <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" alt="Dog">
+    <!--access the above link using navigation button-->
+    </br>
+    <button onclick="window.location.href='https://www.petmd.com/dog/conditions/digestive/c_dg_diarrhea_acute'">Diarrhea in Dogs</button>
+    <p>Thanks for visiting!</p>
+    <!--Create a simple thymeleaf template for pet clinic-->
+    <h1>Thymeleaf Template</h1>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    <!--Access the above thymeleaf-->
+    <button onclick="window.location.href='http://localhost:8080/greeting?name=PetClinic'">Thymeleaf</button>
+</body>
+</html>
